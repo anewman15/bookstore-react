@@ -9,9 +9,9 @@ const BooksForm = props => {
         Title
         <input type="text" name="title" id="title" />
       </label>
-      <h1>
+      <span>
         {categories}
-      </h1>
+      </span>
     </form>
   );
 };
