@@ -9,9 +9,9 @@ const BooksForm = props => {
         Title
         <input type="text" name="title" id="title" />
       </label>
-      <span>
-        {categories}
-      </span>
+      <select>
+        {categories.map(category => <option key={category}>{category}</option>)}
+      </select>
     </form>
   );
 };
