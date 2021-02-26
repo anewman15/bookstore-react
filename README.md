@@ -45,7 +45,7 @@ Available [here](https://infinite-basin-41441.herokuapp.com/)
 - Github: [@visva-dev](https://github.com/visva-dev)
 - Twitter: [@Visva_Dev](https://twitter.com/Visva_Dev)
 - Linkedin: [@Visvaldas-Rapalis](https://www.linkedin.com/in/visvaldas-rapalis/)
-- Website: [good-developer.com](https://www.visva.tech/)
+- Website: [www.visva.tech](https://www.visva.tech/)
 
 ##    Contributing
 
