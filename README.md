@@ -40,6 +40,13 @@ Available [here](https://infinite-basin-41441.herokuapp.com/)
 - Linkedin: https://www.linkedin.com/in/aanuman15/
 - Email:    anewman15@hotmail.com
 
+👤 **Visvaldas Rapalis**
+
+- Github: [@visva-dev](https://github.com/visva-dev)
+- Twitter: [@Visva_Dev](https://twitter.com/Visva_Dev)
+- Linkedin: [@Visvaldas-Rapalis](https://www.linkedin.com/in/visvaldas-rapalis/)
+- Website: [good-developer.com](https://www.visva.tech/)
+
 ##    Contributing
 
 Contributions, issues and feature requests are welcome!
