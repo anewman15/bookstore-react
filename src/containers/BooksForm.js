@@ -10,6 +10,7 @@ const BooksForm = props => {
         <input type="text" name="title" id="title" />
       </label>
       <select>
+        <option selected>Category</option>
         {categories.map(category => <option key={category}>{category}</option>)}
       </select>
     </form>
