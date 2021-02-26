@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Bookstore App - React and Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Bookstore app created using React and Redux
 
-## Available Scripts
 
-In the project directory, you can run:
+## Built With
+1. JavaScript / ES6
+2. React.js
+3. Redux.js
+4. Jest
+5. Enzyme
+6. HTML5
+7. CSS3
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## App Screenshot
+![App Screenshot](./app-screenshot.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Live Demo
+Available [here](https://infinite-basin-41441.herokuapp.com/)
 
-### `npm test`
+## Deployment
+1. Open your Terminal from a folder of your choice and clone [this repo](https://github.com/anewman15/bookstore-react/)
+2. Navigate to the project directory
+3. Run `npm install`
+4. Then run `npm run start`
+5. Open `http://localhost:3000` in your browser and navigate around the site.
+6. Navigate through the website and find the Calculator app page
+7. Make calculations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Testing
+1. Run `npm run test` in the Terminal to run the tests
 
-### `npm run build`
+## Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👤 **Abdullah Numan**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Github:   https://github.com/anewman15
+- Twitter:  https://twitter.com/aanuman15
+- Linkedin: https://www.linkedin.com/in/aanuman15/
+- Email:    anewman15@hotmail.com
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👤 **Visvaldas Rapalis**
 
-### `npm run eject`
+- Github: [@visva-dev](https://github.com/visva-dev)
+- Twitter: [@Visva_Dev](https://twitter.com/Visva_Dev)
+- Linkedin: [@Visvaldas-Rapalis](https://www.linkedin.com/in/visvaldas-rapalis/)
+- Website: [www.visva.tech](https://www.visva.tech/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##    Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions, issues and feature requests are welcome!
+Please send your feedback [here](https://github.com/anewman15/bookstore-react/issues)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Show your support
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
