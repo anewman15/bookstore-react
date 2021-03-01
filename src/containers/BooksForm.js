@@ -11,6 +11,12 @@ const BooksForm = props => {
     });
   };
 
+  const handleSelectChange = event => {
+    setBook({
+      category: event.target.value,
+    });
+  };
+
   return (
     <form>
       <label htmlFor="title">
