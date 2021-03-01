@@ -3,12 +3,18 @@ const DELETE_BOOK = 'DELETE_BOOK';
 
 const createBook = book => ({
   type: CREATE_BOOK,
-  book,
+  payload: {
+    id: book.id,
+    title: book.title,
+    category: book.category,
+  },
 });
 
 const deleteBook = book => ({
   type: DELETE_BOOK,
-  book,
+  payload: {
+    id: book.id,
+  },
 });
 
 export { createBook, deleteBook };
