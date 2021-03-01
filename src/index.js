@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import bookReducer from './reducers/books';
+
+const store = createStore(bookReducer);
 
 ReactDOM.render(
   <React.StrictMode>
