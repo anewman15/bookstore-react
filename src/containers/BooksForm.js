@@ -8,14 +8,13 @@ const BooksForm = props => {
     setBook({
       title: event.target.value,
     });
-    console.log(book.title);
   };
 
-  // const handleSelectChange = event => {
-  //   setBook({
-  //     category: event.target.value,
-  //   });
-  // };
+  const handleSelectChange = event => {
+    setBook({
+      category: event.target.value,
+    });
+  };
 
   return (
     <form>
@@ -23,9 +22,11 @@ const BooksForm = props => {
         Title
         <input type="text" name="title" id="title" value={book.title} onChange={handleInputChange} />
       </label>
-      <select>
+      <select value={book.category} onChange={handleSelectChange}>
         <option selected>Category</option>
-        {categories.map(category => <option key={category}>{category}</option>)}
+        {categories.map(category => (
+          <option key={category} value={category.toLowerCase()}>{category}</option>
+        ))}
       </select>
     </form>
   );
