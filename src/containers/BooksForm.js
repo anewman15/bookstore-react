@@ -5,6 +5,12 @@ const BooksForm = props => {
   const { categories } = props;
   const [book, setBook ] = useState({});
 
+  const handleInputChange = event => {
+    setBook({
+      title: event.target.value,
+    });
+  };
+
   return (
     <form>
       <label htmlFor="title">
