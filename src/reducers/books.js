@@ -14,9 +14,9 @@ const initialBookState = {
 };
 
 const bookReducer = (state = initialBookState, action) => {
-  const { id, title, category } = action.payload;
   switch (action.type) {
     case 'CREATE_BOOK': {
+      const { id, title, category } = action.payload;
       return {
         ...state,
         books: [
@@ -30,6 +30,7 @@ const bookReducer = (state = initialBookState, action) => {
       };
     }
     case 'DELETE_BOOK': {
+      const { id } = action.payload;
       return {
         ...state,
         books: [...state.books].filter(book => book.id === id),
