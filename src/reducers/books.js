@@ -18,6 +18,12 @@ const bookReducer = (state = initialBookState, action) => {
         ],
       };
     }
+    case 'DELETE_BOOK': {
+      return {
+        ...state,
+        books: [...state.books].filter(book => book.id === id),
+      };
+    }
     default: {
       return state;
     }

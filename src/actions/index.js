@@ -1,7 +1,7 @@
 const CREATE_BOOK = 'CREATE_BOOK';
 const DELETE_BOOK = 'DELETE_BOOK';
 
-let bookId;
+const bookId = 0;
 
 const createBook = book => ({
   type: CREATE_BOOK,
