@@ -1,5 +1,16 @@
 const initialBookState = {
-  books: [],
+  books: [
+    {
+      id: Math.floor(Math.random() + 1000000),
+      title: 'A Brief History of Time',
+      catgory: 'Sci-Fi',
+    },
+    {
+      id: Math.floor(Math.random + 1000000),
+      title: "Harry Potter: Sorcerer's Store",
+      category: 'Kids',
+    },
+  ],
 };
 
 const bookReducer = (state = initialBookState, action) => {
