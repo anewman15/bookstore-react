@@ -3,25 +3,25 @@ import { useState } from 'react';
 
 const BooksForm = props => {
   const { categories } = props;
-  const [book, setBook ] = useState({});
-
+  const [book, setBook] = useState({});
   const handleInputChange = event => {
     setBook({
       title: event.target.value,
     });
+    console.log(book.title);
   };
 
-  const handleSelectChange = event => {
-    setBook({
-      category: event.target.value,
-    });
-  };
+  // const handleSelectChange = event => {
+  //   setBook({
+  //     category: event.target.value,
+  //   });
+  // };
 
   return (
     <form>
       <label htmlFor="title">
         Title
-        <input type="text" name="title" id="title" />
+        <input type="text" name="title" id="title" value={book.title} onChange={handleInputChange} />
       </label>
       <select>
         <option selected>Category</option>
