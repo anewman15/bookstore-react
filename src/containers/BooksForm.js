@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const BooksForm = props => {
   const { categories } = props;
+  const [book, setBook ] = useState({});
 
   return (
     <form>
