@@ -5,7 +5,7 @@ import { createBook } from '../actions/index';
 
 const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-  const [book, setBook] = useState({});
+  const [book, setBook] = useState({ title: '', category: 'Category' });
   const handleInputChange = event => {
     setBook({
       title: event.target.value,
