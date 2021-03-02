@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 
-const BooksList = () => (
+const BooksList = ({ books }) => (
   <div>
     <h1>Books List</h1>
     <table>
@@ -14,6 +14,7 @@ const BooksList = () => (
       <tbody>
         <Book book={{ id: 1, title: 'about memory', category: 'self improve' }} />
         <Book book={{ id: 2, title: 'about nothing', category: 'self improve' }} />
+        {books.map(book => <Book key={book.id} book={book} />)}
       </tbody>
     </table>
   </div>
