@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 import { deleteBook } from '../actions/index';
 
 const Book = ({ book, deleteBook }) => {
+  const handleRemoveBook = () => {
+    deleteBook(book.id);
+  };
+
   return (
     <tr>
       <td>{book.id}</td>
