@@ -22,7 +22,7 @@ const BooksForm = props => {
         Title
         <input type="text" name="title" id="title" value={book.title} onChange={handleInputChange} />
       </label>
-      <select>
+      <select value={book.category} onChange={handleSelectChange}>
         <option selected>Category</option>
         {categories.map(category => <option key={category}>{category}</option>)}
       </select>
