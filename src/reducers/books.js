@@ -6,7 +6,7 @@ const initialBookState = {
       catgory: 'Sci-Fi',
     },
     {
-      id: Math.floor(Math.random + 1000000),
+      id: Math.floor(Math.random() + 1000000),
       title: "Harry Potter: Sorcerer's Store",
       category: 'Kids',
     },
