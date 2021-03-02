@@ -23,8 +23,10 @@ const BooksForm = ({ createBook }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    createBook(book);
-    setBook(bookReset);
+    if (book.title && book.title.length && book.category !== 'Category') {
+      createBook(book);
+      setBook(bookReset);
+    }
   };
 
   return (
