@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
 
@@ -17,6 +18,10 @@ const BooksList = () => (
     </table>
   </div>
 );
+
+BooksList.propTypes = {
+  books: PropTypes.array,
+}.isRequired;
 
 const mapStateToProps = state => ({
   books: [...state.books],
