@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { connect } from 'react-redux';
-import createBook from '../actions/index';
+import { createBook } from '../actions/index';
 
 const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -20,7 +20,7 @@ const BooksForm = ({ createBook }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    createBook();
+    createBook(book);
   };
 
   return (
@@ -33,6 +33,7 @@ const BooksForm = ({ createBook }) => {
         <option selected>Category</option>
         {categories.map(category => <option key={category}>{category}</option>)}
       </select>
+      <button type="submit">Create book</button>
     </form>
   );
 };
