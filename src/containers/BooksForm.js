@@ -5,15 +5,18 @@ import { createBook } from '../actions/index';
 
 const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-  const [book, setBook] = useState({ title: '', category: 'Category' });
+  const bookReset = { title: '', category: 'Category' };
+  const [book, setBook] = useState(bookReset);
   const handleInputChange = event => {
     setBook({
+      ...book,
       title: event.target.value,
     });
   };
 
   const handleSelectChange = event => {
     setBook({
+      ...book,
       category: event.target.value,
     });
   };
@@ -21,6 +24,7 @@ const BooksForm = ({ createBook }) => {
   const handleSubmit = event => {
     event.preventDefault();
     createBook(book);
+    setBook(bookReset);
   };
 
   return (
