@@ -4,7 +4,7 @@ import { deleteBook } from '../actions/index';
 
 const Book = ({ book, deleteBook }) => {
   const handleRemoveBook = () => {
-    deleteBook(book.id);
+    deleteBook(book);
   };
 
   return (
