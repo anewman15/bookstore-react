@@ -12,8 +12,6 @@ const BooksList = ({ books }) => (
         <th>Category</th>
       </tr>
       <tbody>
-        <Book book={{ id: 1, title: 'about memory', category: 'self improve' }} />
-        <Book book={{ id: 2, title: 'about nothing', category: 'self improve' }} />
         {books.map(book => <Book key={book.id} book={book} />)}
       </tbody>
     </table>
