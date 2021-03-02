@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const BooksForm = props => {
+const BooksForm = ({ createBook }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [book, setBook] = useState({});
   const handleInputChange = event => {
@@ -16,8 +16,13 @@ const BooksForm = props => {
     });
   };
 
+  const handleSubmit = event => {
+    event.preventDefault();
+    createBook();
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="title">
         Title
         <input type="text" name="title" id="title" value={book.title} onChange={handleInputChange} />
