@@ -33,9 +33,9 @@ const BooksForm = ({ createBook }) => {
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">
         Title
-        <input type="text" name="title" id="title" value={book.title} onChange={handleInputChange} />
+        <input type="text" name="title" id="title" value={book.title} onChange={handleInputChange} required />
       </label>
-      <select value={book.category} onChange={handleSelectChange}>
+      <select value={book.category} onChange={handleSelectChange} required>
         <option selected>Category</option>
         {categories.map(category => <option key={category}>{category}</option>)}
       </select>
