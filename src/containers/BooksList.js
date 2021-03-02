@@ -10,8 +10,8 @@ const BooksList = () => (
         <th>Category</th>
       </tr>
       <tbody>
-        <Book id={1} title="about memory" category="self improve" />
-        <Book id={2} title="dfdfdfd emory" category="ererererev improve" />
+        <Book book={{ id: 1, title: 'about memory', category: 'self improve' }} />
+        <Book book={{ id: 2, title: 'about nothing', category: 'self improve' }} />
       </tbody>
     </table>
   </div>
