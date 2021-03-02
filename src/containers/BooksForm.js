@@ -8,14 +8,13 @@ const BooksForm = props => {
     setBook({
       title: event.target.value,
     });
-    console.log(book.title);
   };
 
-  // const handleSelectChange = event => {
-  //   setBook({
-  //     category: event.target.value,
-  //   });
-  // };
+  const handleSelectChange = event => {
+    setBook({
+      category: event.target.value,
+    });
+  };
 
   return (
     <form>
