@@ -8,6 +8,7 @@ const Book = ({ book, deleteBook }) => {
       <td>{book.id}</td>
       <td>{book.title}</td>
       <td>{book.category}</td>
+      <td><button type="button" onClick={handleRemoveBook}>Delete</button></td>
     </tr>
   );
 };
