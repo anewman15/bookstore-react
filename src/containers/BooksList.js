@@ -17,4 +17,9 @@ const BooksList = () => (
   </div>
 );
 
+const mapStateToProps = state => {
+  return {
+    books: [...state.books],
+}
+
 export default BooksList;
