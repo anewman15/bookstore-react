@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 const BooksForm = props => {
-  const { categories } = props;
+  const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   const [book, setBook] = useState({});
   const handleInputChange = event => {
     setBook({
