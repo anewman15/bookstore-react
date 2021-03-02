@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { deleteBook } from '../actions/index';
 
-const Book = props => {
-  const { book } = props;
+const Book = ({ book, deleteBook }) => {
   return (
     <tr>
       <td>{book.id}</td>
@@ -14,4 +15,5 @@ const Book = props => {
 Book.propTypes = {
   id: PropTypes.number,
 }.isRequired;
-export default Book;
+
+export default connect(null, { deleteBook })(Book);
