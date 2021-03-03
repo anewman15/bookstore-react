@@ -4,6 +4,7 @@
 
 const CREATE_BOOK = 'CREATE_BOOK';
 const DELETE_BOOK = 'DELETE_BOOK';
+const CHANGE_FILTER = 'CHANGE_FILTER';
 
 let bookId = 0;
 
@@ -23,4 +24,9 @@ const deleteBook = book => ({
   },
 });
 
-export { createBook, deleteBook };
+const changeFilter = category => ({
+  type: CHANGE_FILTER,
+  payload: category,
+});
+
+export { createBook, deleteBook, changeFilter };
