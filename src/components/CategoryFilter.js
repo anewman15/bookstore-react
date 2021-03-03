@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const categoryFilter = () => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
   return (
@@ -12,5 +14,9 @@ const categoryFilter = () => {
     </div>
   );
 };
+
+categoryFilter.propTypes = {
+  category: PropTypes.string,
+}.isRequired;
 
 export default categoryFilter;
