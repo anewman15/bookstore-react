@@ -1,19 +1,22 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { changeFilter } from '../actions/index';
 
-const categoryFilter = ({ changeFilter }) => {
+const CategoryFilter = ({ changeFilter }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+  const [categoryFilter, setcategoryFilter] = useState('All');
 
   const handleFilterChange = event => {
-    changeFilter(event.target.value);
+    setcategoryFilter({
+      categoryFilter: event.target.value,
+    });
+    changeFilter(categoryFilter);
   };
 
   return (
     <div>
       <span>Filter books by category</span>
-      <select name="filter" id="filter">
-        <option value="all" onChange={handleFilterChange}>All</option>
+      <select value={categoryFilter} onChange={handleFilterChange}>
+        <option value="all">All</option>
         {categories.map(category => (
           <option
             key={category}
@@ -28,8 +31,8 @@ const categoryFilter = ({ changeFilter }) => {
   );
 };
 
-categoryFilter.propTypes = {
+CategoryFilter.propTypes = {
   category: PropTypes.instanceOf(Object),
 }.isRequired;
 
-export default connect(null, { changeFilter })(categoryFilter);
+export default (CategoryFilter);
