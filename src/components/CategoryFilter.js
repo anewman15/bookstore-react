@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import connect from 'react-redux';
+import { changeFilter } from '../actions/index';
 
 const categoryFilter = () => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -19,4 +21,4 @@ categoryFilter.propTypes = {
   category: PropTypes.string,
 }.isRequired;
 
-export default categoryFilter;
+export default connect(null, { changeFilter })(categoryFilter);
