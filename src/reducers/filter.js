@@ -11,7 +11,10 @@ const filterReducer = (state = initialCategoryFilter, action) => {
       };
     }
     default: {
-      return state.filter;
+      return {
+        ...state,
+        filter: 'All',
+      };
     }
   }
 };
