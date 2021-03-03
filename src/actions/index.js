@@ -1,12 +1,16 @@
+/*
+  eslint-disable no-plusplus
+*/
+
 const CREATE_BOOK = 'CREATE_BOOK';
 const DELETE_BOOK = 'DELETE_BOOK';
 
-const bookId = 0;
+let bookId = 0;
 
 const createBook = book => ({
   type: CREATE_BOOK,
   payload: {
-    id: bookId + 1,
+    id: ++bookId,
     title: book.title,
     category: book.category,
   },
