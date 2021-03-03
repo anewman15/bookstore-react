@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { changeFilter } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
 
-const BooksList = ({ books }) => (
+const BooksList = ({ books, changeFilter }) => (
   <div>
     <h1>Books List</h1>
-    <CategoryFilter />
+    <CategoryFilter changeFilter={changeFilter} />
     <table>
       <tr>
         <th>Book ID</th>
@@ -28,4 +29,4 @@ const mapStateToProps = state => ({
   books: [...state.books],
 });
 
-export default connect(mapStateToProps)(BooksList);
+export default connect(mapStateToProps, { changeFilter })(BooksList);
