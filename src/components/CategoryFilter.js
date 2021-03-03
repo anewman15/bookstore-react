@@ -6,9 +6,7 @@ const CategoryFilter = ({ changeFilter }) => {
   const [categoryFilter, setcategoryFilter] = useState('All');
 
   const handleFilterChange = event => {
-    setcategoryFilter({
-      categoryFilter: event.target.value,
-    });
+    setcategoryFilter(event.target.value);
     changeFilter(categoryFilter);
   };
 
