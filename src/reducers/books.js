@@ -37,7 +37,7 @@ const bookReducer = (state = initialBookState, action) => {
       };
     }
     default: {
-      return state;
+      return state.books;
     }
   }
 };
