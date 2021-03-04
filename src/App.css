@@ -8,6 +8,10 @@ body {
   background-color: #fff;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .border-bottom {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -98,8 +102,16 @@ body {
   font-family: 'Roboto Slab', Arial, sans-serif;
 }
 
+.font-size-13 {
+  font-size: 13px;
+}
+
 .font-size-14 {
   font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
 }
 
 .font-size-22 {
@@ -128,6 +140,13 @@ body {
   background: none;
 }
 
+.btn-bg-blue {
+  padding: 0.4rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: #0290ff;
+}
+
 .btn-center {
   margin: 0 2rem;
   padding: 0 2rem;
@@ -143,4 +162,16 @@ body {
 .completed-item {
   margin: 0 0.5rem;
   padding: 0 0.5rem;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.current-chapter-top-item {
+  margin: 0.5rem 0;
+}
+
+.current-chapter-actions {
+  margin: 1rem 0 0.2rem 0;
 }

@@ -34,11 +34,11 @@ const Book = ({ book, deleteBook }) => {
           </div>
         </div>
         <div className="current-chapter">
-          <div>
-            <p>Current Chapter</p>
-            <p>Chapter 17</p>
+          <div className="current-chapter-top">
+            <p className="roboto upper-case font-size-13 current-chapter-top-item">Current Chapter</p>
+            <p className="roboto font-size-16 current-chapter-top-item">Chapter 17</p>
           </div>
-          <button type="button">Update Progress</button>
+          <button type="button" className="roboto btn-bg-blue font-size-13 text-white upper-case current-chapter-actions">Update Progress</button>
         </div>
 
       </div>
