@@ -1,22 +1,18 @@
-const initialCategoryFilter = {
-  filter: 'All',
-};
-
-const filterReducer = (state = initialCategoryFilter, action) => {
+const filter = (state, action) => {
   switch (action.type) {
     case 'CHANGE_FILTER': {
       return {
         ...state,
-        filter: action.payload.category,
+        category: action.payload.filter,
       };
     }
     default: {
       return {
         ...state,
-        filter: 'All',
+        category: 'All',
       };
     }
   }
 };
 
-export default filterReducer;
+export default filter;
