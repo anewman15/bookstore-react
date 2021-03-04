@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Roboto+Slab:wght@400;700&display=swap');
+
+body {
+  background-color: #fafafa;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e8e8e8;
+}
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   max-width: 100%;
   margin: 0 auto;
   height: 95px;
@@ -34,7 +43,7 @@
   color: #aaa;
 }
 
-.user_icon {
+.user-icon {
   width: 45px;
   height: 45px;
 }
@@ -44,4 +53,80 @@
   color: #0290ff;
   font-weight: bold;
   font-size: 30px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-wrapper {
+  margin: 1rem auto;
+  padding: 1.5rem;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.book-detail {
+  margin: 0.5rem 0;
+}
+
+.book-actions {
+  margin: 2rem 0 0.2rem 0;
+}
+
+.book-right {
+  color: #000;
+}
+
+.book-completed {
+  margin: 0 4rem;
+}
+
+.current-chapter {
+  margin: 0 6rem;
+}
+
+.montserrat {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto Slab', Arial, sans-serif;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.color-grey-1 {
+  color: #5a5a5a;
+}
+
+.color-light-blue {
+  color: #4386bf;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.btn-center {
+  margin: 0 2rem;
+  padding: 0 2rem;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
 }
