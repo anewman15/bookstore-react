@@ -9,11 +9,13 @@ const BooksList = ({ books, changeFilter }) => (
     <h1>Books List</h1>
     <CategoryFilter changeFilter={changeFilter} />
     <table>
-      <tr>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>{}</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
       <tbody>
         {books.map(book => <Book key={book.id} book={book} />)}
       </tbody>
@@ -27,6 +29,7 @@ BooksList.propTypes = {
 
 const mapStateToProps = state => ({
   books: [...state.books],
+  filter: state.filter,
 });
 
 export default connect(mapStateToProps, { changeFilter })(BooksList);
