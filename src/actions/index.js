@@ -26,7 +26,9 @@ const deleteBook = book => ({
 
 const changeFilter = category => ({
   type: CHANGE_FILTER,
-  payload: category,
+  payload: {
+    filter: category,
+  },
 });
 
 export { createBook, deleteBook, changeFilter };
