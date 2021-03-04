@@ -6,21 +6,11 @@ import CategoryFilter from '../components/CategoryFilter';
 import selectBooksByCategory from '../reducers/selectors';
 
 const BooksList = ({ books, changeFilter }) => (
-  <div>
-    <h1>Books List</h1>
+  <div className="container">
     <CategoryFilter changeFilter={changeFilter} />
-    <table>
-      <thead>
-        <tr>
-          <th>{}</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        {books.map(book => <Book key={book.id} book={book} />)}
-      </tbody>
-    </table>
+    <div>
+      {books.map(book => <Book key={book.id} book={book} />)}
+    </div>
   </div>
 );
 
