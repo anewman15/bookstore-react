@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
 
 body {
   background-color: #fafafa;
@@ -39,7 +39,7 @@ body {
   text-transform: uppercase;
 }
 
-.categories {
+.color-grey {
   color: #aaa;
 }
 
@@ -106,6 +106,10 @@ body {
   font-size: 22px;
 }
 
+.font-size-32 {
+  font-size: 32px;
+}
+
 .text-bold {
   font-weight: bold;
 }
@@ -129,4 +133,14 @@ body {
   padding: 0 2rem;
   border-right: 1px solid #e8e8e8;
   border-left: 1px solid #e8e8e8;
+}
+
+.book-completed-item {
+  margin: 0 0.8rem;
+  padding: 0 0.8rem;
+}
+
+.completed-item {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
 }

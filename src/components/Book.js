@@ -12,7 +12,7 @@ const Book = ({ book, deleteBook }) => {
       <div className="book-left">
         <div className="book-info">
           <div className="book-detail">
-            <p className="montserrat font-size-14 color-grey-1 book-detail">{book.category}</p>
+            <p className="montserrat font-size-14 color-grey-1 text-bold book-detail">{book.category}</p>
             <p className="roboto font-size-22 text-bold book-detail">{book.title}</p>
             <p className="roboto font-size-14 color-light-blue book-detail">Visvaldas Rapalis</p>
           </div>
@@ -25,12 +25,12 @@ const Book = ({ book, deleteBook }) => {
       </div>
       <div className="book-right flex-between">
         <div className="book-completed flex-between">
-          <div className="">
+          <div className="book-completed-item">
             <img className="user-icon" src="user_icon.png" alt="percent-completed" />
           </div>
           <div>
-            <p>64%</p>
-            <p>Completed</p>
+            <p className="font-size-32 montserrat completed-item">64%</p>
+            <p className="color-grey font-size-14 montserrat completed-item">Completed</p>
           </div>
         </div>
         <div className="current-chapter">
