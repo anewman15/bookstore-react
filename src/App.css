@@ -65,6 +65,12 @@ body {
   align-items: center;
 }
 
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -197,4 +203,17 @@ body {
 
 .category-filter {
   margin-top: 1rem;
+}
+
+.form-input {
+  width: 30%;
+}
+
+.form-select {
+  width: 25%;
+  margin: 0 20px;
+}
+
+.form-button {
+  width: 25%;
 }
