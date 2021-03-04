@@ -8,9 +8,9 @@ const CategoryFilter = ({ changeFilter }) => {
   };
 
   return (
-    <div>
-      <span>Filter books by category</span>
-      <select onChange={handleFilterChange}>
+    <div className="mx-center flex-center category-filter">
+      <p className="filter-item montserrat">Filter books by category</p>
+      <select className="montserrat filter-select" onChange={handleFilterChange}>
         <option value="All">All</option>
         {categories.map(category => (
           <option

@@ -65,6 +65,17 @@ body {
   align-items: center;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-item {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
 .book-wrapper {
   margin: 1rem auto;
   padding: 1.5rem;
@@ -174,4 +185,16 @@ body {
 
 .current-chapter-actions {
   margin: 1rem 0 0.2rem 0;
+}
+
+.mx-center {
+  margin: 0 auto;
+}
+
+.filter-select {
+  padding: 0.3rem;
+}
+
+.category-filter {
+  margin-top: 1rem;
 }
