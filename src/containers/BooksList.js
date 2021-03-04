@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { changeFilter } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import selectBooksByCategory from '../reducers/selectors';
 
 const BooksList = ({ books, changeFilter }) => (
   <div>
@@ -28,8 +29,7 @@ BooksList.propTypes = {
 }.isRequired;
 
 const mapStateToProps = state => ({
-  books: [...state.books],
-  filter: state.filter,
+  books: selectBooksByCategory(state),
 });
 
 export default connect(mapStateToProps, { changeFilter })(BooksList);
