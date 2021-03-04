@@ -14,6 +14,6 @@ const initialBookState = [
   },
 ];
 
-const store = createStore(combinedReducer, { books: initialBookState, filter: 'All' });
+const store = createStore(combinedReducer, { books: initialBookState, filter: { category: 'All' } });
 
 export default store;
