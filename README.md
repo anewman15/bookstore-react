@@ -15,7 +15,7 @@ This is a Bookstore app created using React and Redux
 ![App Screenshot](./app-screenshot.png)
 
 ## Live Demo
-Available [here](https://infinite-basin-41441.herokuapp.com/)
+Available [here](https://little-princess-bookstore.herokuapp.com/)
 
 ## Deployment
 1. Open your Terminal from a folder of your choice and clone [this repo](https://github.com/anewman15/bookstore-react/)
