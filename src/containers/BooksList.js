@@ -3,16 +3,22 @@ import { connect } from 'react-redux';
 import { changeFilter } from '../actions';
 import Book from '../components/Book';
 import CategoryFilter from '../components/CategoryFilter';
+import Empty from '../components/Empty';
 import selectBooksByCategory from '../reducers/selectors';
 
-const BooksList = ({ books, changeFilter }) => (
-  <div className="container">
-    <CategoryFilter changeFilter={changeFilter} />
-    <div>
-      {books.map(book => <Book key={book.id} book={book} />)}
+const BooksList = ({ books, changeFilter }) => {
+  const bookList = books.map(book => <Book key={book.id} book={book} />);
+  const content = books && books.length ? bookList : <Empty />;
+
+  return (
+    <div className="container">
+      <CategoryFilter changeFilter={changeFilter} />
+      <div>
+        {content}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 BooksList.propTypes = {
   books: PropTypes.instanceOf,
