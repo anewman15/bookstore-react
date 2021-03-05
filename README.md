@@ -7,10 +7,8 @@ This is a Bookstore app created using React and Redux
 1. JavaScript / ES6
 2. React.js
 3. Redux.js
-4. Jest
-5. Enzyme
-6. HTML5
-7. CSS3
+4. HTML5
+5. CSS3
 
 
 ## App Screenshot

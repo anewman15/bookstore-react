@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
-const CategoryFilter = ({ changeFilter }) => {
+const CategoryFilter = ({ filter, changeFilter }) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
   const handleFilterChange = event => {
@@ -8,9 +9,9 @@ const CategoryFilter = ({ changeFilter }) => {
   };
 
   return (
-    <div>
-      <span>Filter books by category</span>
-      <select onChange={handleFilterChange}>
+    <div className="mx-center flex-center category-filter">
+      <p className="filter-item montserrat">Filter books by category</p>
+      <select className="montserrat filter-select" value={filter.category} onChange={handleFilterChange}>
         <option value="All">All</option>
         {categories.map(category => (
           <option
@@ -27,7 +28,12 @@ const CategoryFilter = ({ changeFilter }) => {
 };
 
 CategoryFilter.propTypes = {
-  category: PropTypes.instanceOf(Object),
+  filter: PropTypes.instanceOf(Object),
 }.isRequired;
 
-export default CategoryFilter;
+const mapStateToProps = state => ({
+  ...state,
+  filter: { ...state.filter },
+});
+
+export default connect(mapStateToProps)(CategoryFilter);

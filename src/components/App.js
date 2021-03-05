@@ -1,10 +1,11 @@
 import '../App.css';
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
+import Navigation from './Navigation';
 
 const App = () => (
   <div className="App">
-    Hello, Welcome to your favorite Bookstore
+    <Navigation />
     <BooksList />
     <BooksForm />
   </div>
