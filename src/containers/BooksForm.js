@@ -30,16 +30,25 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <div className="container">
-      <div className="category-filter">
-        <p className="upper-case font-size-22 filter-item color-grey-1 text-bold">Add New Book</p>
-        <form onSubmit={handleSubmit}>
-          <input className="form-input filter-select" type="text" name="title" id="title" value={book.title} onChange={handleInputChange} required />
-          <select className="form-select filter-select" value={book.category} onChange={handleSelectChange} required>
+    <div className="container my-3">
+      <div className="my-2">
+        <p className="upper-case font-size-22 color-grey-1 text-bold my-1">Add New Book</p>
+        <form className="flex-start my-1" onSubmit={handleSubmit}>
+          <input
+            className="montserrat form-input filter-select"
+            type="text"
+            name="title"
+            id="title"
+            value={book.title}
+            onChange={handleInputChange}
+            placeholder="Book Title"
+            required
+          />
+          <select className="montserrat form-select filter-select" value={book.category} onChange={handleSelectChange} required>
             <option selected disabled>Category</option>
             {categories.map(category => <option key={category}>{category}</option>)}
           </select>
-          <button className="roboto btn-bg-blue font-size-13 text-white upper-case current-chapter-actions" type="submit">Create book</button>
+          <button className="roboto btn-bg-blue font-size-13 text-white upper-case" type="submit">Create book</button>
         </form>
       </div>
     </div>

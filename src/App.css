@@ -61,19 +61,33 @@ body {
 
 .flex-between {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: center;
   align-items: center;
 }
 
 .flex-around {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-content: center;
   align-items: center;
 }
 
 .flex-center {
+  flex-wrap: nowrap;
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
@@ -206,14 +220,27 @@ body {
 }
 
 .form-input {
-  width: 30%;
+  flex-grow: 3;
 }
 
 .form-select {
-  width: 25%;
+  flex-grow: 1;
   margin: 0 20px;
 }
 
 .form-button {
-  width: 25%;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.my-1 {
+  margin: 1rem auto;
+}
+
+.my-2 {
+  margin: 3rem auto;
+}
+
+.my-3 {
+  margin: 1rem auto 15rem;
 }
